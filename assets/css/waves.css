@@ -2,7 +2,7 @@
     position: relative;
     color: #fff;
     background: linear-gradient(to bottom,#7a19f1,#332179);
-    background-attachment: fixed
+    background-attachment: fixed;
 }
 
 .hero .section {
@@ -68,7 +68,6 @@
     background-size: cover;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNDQwIDMyMCc+PHBhdGggZmlsbD0nIzUwMDBjYScgZmlsbC1vcGFjaXR5PScwLjknIGQ9J00wLDY0TDYwLDU4LjdDMTIwLDUzLDI0MCw0MywzNjAsODBDNDgwLDExNyw2MDAsMjAzLDcyMCwyNTAuN0M4NDAsMjk5LDk2MCwzMDksMTA4MCwzMTQuN0MxMjAwLDMyMCwxMzIwLDMyMCwxMzgwLDMyMEwxNDQwLDMyMEwxNDQwLDBMMTM4MCwwQzEzMjAsMCwxMjAwLDAsMTA4MCwwQzk2MCwwLDg0MCwwLDcyMCwwQzYwMCwwLDQ4MCwwLDM2MCwwQzI0MCwwLDEyMCwwLDYwLDBMMCwwWic+PC9wYXRoPjwvc3ZnPg==)
 }
-
 
 @media(max-width: 991.98px) {
     .hero:before {
@@ -152,11 +151,11 @@
 
 .hero__divider:after {
     content: ' ';
-    right: 0;
-    bottom: -229px;
     opacity: 1;
+    right: 0;
     left: 0;
-    height: 330px;
+    bottom: -150px;
+    height: 200px;
     position: absolute;
     z-index: 0;
     background-position: center top;
