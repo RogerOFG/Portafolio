@@ -118,7 +118,6 @@ main{
 .nosotros{
     width: 100%;
     text-align: center;
-    border: 1px solid;
     background-color: var(--secondary-color);
     color: var(--white);
 }
