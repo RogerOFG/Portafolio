@@ -8,6 +8,12 @@ body{
     font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
 }
 
+:root{
+    --primary-color: #7e2fdfc7;
+    --secondary-color: #7a28dd;
+    --white: #fff;
+}
+
 /*--- -- ------ -- ---*/
 /*--- -- HEADER -- ---*/
 /*--- -- ------ -- ---*/
@@ -18,7 +24,7 @@ header{
 
 .header{
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     height: auto;
     display: flex;
@@ -66,7 +72,6 @@ a{
 
 main{
     margin-top: 90px;
-    /* border: 1px solid; */
 }
 
 /*--- -- --------- -- ---*/
@@ -79,6 +84,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .box{
@@ -86,11 +92,15 @@ main{
     height: 290px;
     border-radius: 20px;
     box-shadow: 0px 3px 6px #0000003a;
-    margin: 10px 20px;
 }
 
 .box-content{
     margin: 30px;
+}
+
+.box-content i{
+    color: var(--primary-color);
+    font-size: 40px;
 }
 
 .box-title{
@@ -98,10 +108,36 @@ main{
     text-transform: uppercase;
     font-size: 15px;
     margin-top: 10px;
-    color: #7e2fdfc7;
+    color: var(--primary-color);
 }
 
-.box-content i{
-    color: #7e2fdfc7;
-    font-size: 40px;
+/*--- -- -------- -- ---*/
+/*--- -- NOSOTROS -- ---*/
+/*--- -- -------- -- ---*/
+
+.nosotros{
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.nosotros-content{
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    width: 760px;
+    max-width: 90%;
+    font-size: 17px;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.wave{
+    background-color: var(--white);
+    fill: var(--secondary-color);
 }
