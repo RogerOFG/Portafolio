@@ -34,6 +34,16 @@
     transition: .4s ease-in-out;
 }
 
+.borde{
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    margin: auto;
+    width: 95%;
+    height: 95%;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
 .tracker:hover~#card .tapa {
     transition: .4s ease-in-out;
     opacity: 1;
@@ -57,8 +67,8 @@
     position: absolute;
     font-weight: bold;
     bottom: 8px;
-    left: 12px;
     font-size: 18px;
+    width: 93%;
     color: #fff;
 }
 
