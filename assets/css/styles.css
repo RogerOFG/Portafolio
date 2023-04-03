@@ -208,9 +208,11 @@ footer{
     justify-content: center;
     margin: 0 auto;
     margin-top: 30px;
+    transition: .3s ease-in-out;
 }
 
 .footer-redes button:hover{
+    transition: .3s ease-in-out;
     color: var(--footer-color);
     background-color: #fff;
 }
