@@ -52,17 +52,33 @@ header{
     width: 100%;
 }
 
+.button-menu{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    font-size: 30px;
+    display: none;
+}
+
 ul{
     list-style: none;
     display: flex;
     justify-content: end;
 }
 
-li{
+.title-menu{
+    display: none;
+}
+
+li,
+.title-menu{
     margin: 20px 20px 5px 20px;
 }
 
-a{
+a,
+.title-menu{
     text-decoration: none;
     color: #fff;
     font-size: 17px;
@@ -189,6 +205,7 @@ main{
     align-items: center;
     min-height: 350px;
     width: 500px;
+    max-width: 100%;
     margin-bottom: 50px;
     flex-direction: column;
     gap: 35px;
@@ -340,4 +357,67 @@ footer{
 
 .footer-txt a{
     color: #ffffffc2;
+}
+
+/*--- -- ---------- -- ---*/
+/*--- -- RESPONSIVE -- ---*/
+/*--- -- ---------- -- ---*/
+
+@media screen and (max-width: 620px) {
+    /*--- -- --------------- -- ---*/
+    /*--- -- MENU RESPONSIVE -- ---*/
+    /*--- -- --------------- -- ---*/
+
+    .header{
+        height: 80px;
+    }
+
+    .menu{
+        position: relative;
+        transform: translateX(250px);
+        display: none;
+    }
+
+    .active{
+        display: block;
+        transform: translateX(46px);
+    }
+
+    nav{
+        position: absolute;
+        right: 0;
+        border-radius: 20px 0 0 20px;
+        background-color: var(--white);
+    }
+
+    ul{
+        display: block;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .title-menu{
+        display: block;
+        padding: 10px 0;
+        border-bottom: 2px solid var(--secondary-color);
+        cursor: pointer;
+    }
+
+    .title-menu .bi{
+        margin-right: 5px;
+    }
+
+    a,
+    .title-menu{
+        color: var(--secondary-color);
+    }
+
+    .button-menu{
+        width: 100px;
+        display: flex;
+    }
+
+    .button-menu .bi{
+        cursor: pointer;
+    }
 }
