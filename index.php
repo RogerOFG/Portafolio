@@ -19,6 +19,9 @@
 
     <!-- Icono de la pagina -->
     <link rel="icon" href="./assets/img/icon.ico">
+
+    <!-- PHP -->
+    <link rel="stylesheet" href="./assets/php/enviarCorreo.php">
 </head>
 <body>
     <!-- HEADER -->
@@ -232,26 +235,26 @@
         <!-- CONTACTANOS -->
         <div class="contacto" id="contact">
             <div class="contacto-container">
-                <div class="card">
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="card">
                     <a class="contacto-form">CONTACTANOS</a>
                     <div class="inputBox">
-                        <input type="text" required="required">
+                        <input type="text" id="nombre" name="nombre" required="required">
                         <span>Nombre</span>
                     </div> 
 
                     <div class="inputBox1">
-                        <input type="text" required="required">
+                        <input type="text" id="correo" name="correo" required="required">
                         <span class="user">Correo</span>
                     </div>
 
                     <div class="inputBox">
-                        <textarea name="" rows="5"  required="required"></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="5" required="required"></textarea>
                         <span>Mensaje</span>    
                     </div>
 
-                    <button class="enter">Enviar</button>
+                    <input type="submit" name="enviar" class="enter" value="Enviar">
 
-                </div>
+                </form>
             </div>
         </div>
     </main>
