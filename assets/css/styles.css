@@ -171,10 +171,6 @@ main{
 /*--- -- CONTACTANOS -- ---*/
 /*--- -- ----------- -- ---*/
 
-.contacto-container{
-    /* margin: 0 auto; */
-}
-
 .contacto-form {
     color: var(--secondary-color);
     text-transform: uppercase;
