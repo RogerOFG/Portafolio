@@ -1,3 +1,427 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --primary-color: #7e2fdfc7;
+    --secondary-color: #7a28dd;
+    --footer-color: #5D17EA;
+    --white: #fff;
+}
+
+/*--- -- ------ -- ---*/
+/*--- -- HEADER -- ---*/
+/*--- -- ------ -- ---*/
+
+header{
+    position: relative;
+}
+
+.header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.icon span{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.menu{
+    width: 100%;
+}
+
+.button-menu{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    font-size: 30px;
+    display: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.title-menu{
+    display: none;
+}
+
+li,
+.title-menu{
+    margin: 20px 20px 5px 20px;
+}
+
+a,
+.title-menu{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/*--- -- ---- -- ---*/
+/*--- -- MAIN -- ---*/
+/*--- -- ---- -- ---*/
+
+main{
+    margin-top: 90px;
+}
+
+/*--- -- --------- -- ---*/
+/*--- -- SERVICIOS -- ---*/
+/*--- -- --------- -- ---*/
+
+.servicios{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.box{
+    width: 300px;
+    height: 290px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px #0000003a;
+}
+
+.box-content{
+    margin: 30px;
+}
+
+.box-content i{
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.box-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+/*--- -- -------- -- ---*/
+/*--- -- NOSOTROS -- ---*/
+/*--- -- -------- -- ---*/
+
+.nosotros{
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(180deg, #7c34d4 10%, #5709f5 90%);
+    color: var(--white);
+}
+
+.nosotros-content{
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 760px;
+    max-width: 90%;
+    font-size: 17px;
+}
+
+.nosotros-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wave{
+    background-color: var(--white);
+}
+
+/*--- -- ---------- -- ---*/
+/*--- -- PORTAFOLIO -- ---*/
+/*--- -- ---------- -- ---*/
+
+.portafolio{
+    text-align: center;
+    padding: 100px 30px 100px 30px;
+}
+
+.portafolio-title{
+    color: var(--secondary-color);
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.trabajos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*--- -- ----------- -- ---*/
+/*--- -- CONTACTANOS -- ---*/
+/*--- -- ----------- -- ---*/
+
+.contacto-form {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1.5em;
+}
+
+.card {
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 500px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+    position: relative;
+    width: 300px;
+}
+
+.inputBox input,
+.inputBox1 input,
+.inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: var(--footer-color);
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid var(--footer-color);
+    border-bottom: 2px solid var(--footer-color);
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: var(--footer-color);
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span,
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span,
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+    transform: translateX(180px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: var(--footer-color);
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+    border: 2px solid var(--footer-color);
+    border-radius: 8px;
+}
+
+.enter {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid var(--footer-color);
+    color: var(--footer-color);
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3em;
+}
+
+.enter:hover {
+    background-color: var(--footer-color);
+    color: white;
+}
+
+/*--- -- ------ -- ---*/
+/*--- -- FOOTER -- ---*/
+/*--- -- ------ -- ---*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--footer-color);
+    color: #ffffffc2;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-img img{
+    width: 60px;
+}
+
+.footer-msj{
+    width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.footer-redes button{
+    color: var(--white);
+    background-color: var(--footer-color);
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: .3s ease-in-out;
+}
+
+.footer-redes button:hover{
+    transition: .3s ease-in-out;
+    color: var(--footer-color);
+    background-color: #fff;
+}
+
+.footer-txt{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    margin: 0;
+}
+
+.footer-txt a{
+    color: #ffffffc2;
+}
+
+/*--- -- ---------- -- ---*/
+/*--- -- RESPONSIVE -- ---*/
+/*--- -- ---------- -- ---*/
+
+@media screen and (max-width: 620px) {
+    /*--- -- --------------- -- ---*/
+    /*--- -- MENU RESPONSIVE -- ---*/
+    /*--- -- --------------- -- ---*/
+
+    .header{
+        height: 80px;
+    }
+
+    .menu{
+        position: relative;
+        transform: translateX(250px);
+        display: none;
+    }
+
+    .active{
+        display: block;
+        transform: translateX(46px);
+    }
+
+    nav{
+        position: absolute;
+        right: 0;
+        border-radius: 20px 0 0 20px;
+        background-color: var(--white);
+    }
+
+    ul{
+        display: block;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .title-menu{
+        display: block;
+        padding: 10px 0;
+        border-bottom: 2px solid var(--secondary-color);
+        cursor: pointer;
+    }
+
+    .title-menu .bi{
+        margin-right: 5px;
+    }
+
+    a,
+    .title-menu{
+        color: var(--secondary-color);
+    }
+
+    .button-menu{
+        width: 100px;
+        display: flex;
+    }
+
+    .button-menu .bi{
+        cursor: pointer;
+    }
+=======
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 *{
@@ -420,4 +844,5 @@ footer{
     .button-menu .bi{
         cursor: pointer;
     }
+>>>>>>> ac7414ef198b5be79109706df80df9bb30c278eb
 }
