@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --primary-color: #7a19f1;
+    --secondary-color: #7a28dd;
+    --footer-color: #5D17EA;
+    --wave-top-color: #7c34d4;
+    --wave-bottom-color: #5709f5;
+    --white: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}

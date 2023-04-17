@@ -1,0 +1,184 @@
+/*--- -- ---- -- ---*/
+/*--- -- MENU -- ---*/
+/*--- -- ---- -- ---*/
+
+header{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid #0000001a;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    color: var(--footer-color);
+    padding: 30px;
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+.icon i{
+    font-size: 30px;
+}
+
+.icon span{
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.menu{
+    width: 100%;
+}
+
+.button-menu{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    font-size: 30px;
+    display: none;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    margin: 20px 20px 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+li a{
+    color: var(--footer-color);
+    font-size: 20px;
+}
+
+li a .bi-x{
+    font-size: 30px;
+}
+
+.button-central{
+    transform: translateY(85px);
+}
+
+.button-central img{
+    width: 60px;
+}
+
+/*--- -- ---- -- ---*/
+/*--- -- MAIN -- ---*/
+/*--- -- ---- -- ---*/
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+/*--- -- ---------- -- ---*/
+/*--- -- BOX-PLANES -- ---*/
+/*--- -- ---------- -- ---*/
+
+.box-planes{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.box-plan{
+    width: 323px;
+    height: 286px;
+    box-shadow: 1px 3px 10px #0000001a;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.deco1, .deco2,
+.deco3, .deco4,
+.deco5, .deco6{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+}
+
+.deco1, .deco3, .deco5{
+    transform: rotate(110deg) translateY(150px) translateX(90px);
+}
+
+.deco2, .deco4, .deco6{
+    z-index: -1;
+    transform: rotate(-5deg) translateY(-20px) translateX(-30px);
+}
+
+/*--- -- COLORES (DECO 1-6) -- ---*/
+
+.deco1{
+    background-color: #0000001C;
+}
+
+.deco2{
+    background-color: #80808024;
+}
+
+.deco3{
+    background-color: #7a19f12d;
+}
+
+.deco4{
+    background-color: #7a19f1c7;
+}
+
+.deco5{
+    background-color: #e4bb3477;
+}
+
+.deco6{
+    background-color: #ffcd00;
+}
+
+/*--- -- FIN COLORES (DECO1-6) -- ---*/
+
+.box-title{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.box-detalles{
+    width: 100%;
+    height: 200px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
