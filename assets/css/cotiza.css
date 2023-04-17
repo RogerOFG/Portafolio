@@ -182,3 +182,22 @@ main{
     justify-content: center;
     gap: 10px;
 }
+
+/*--- -- -------- -- ---*/
+/*--- -- BOX-FORM -- ---*/
+/*--- -- -------- -- ---*/
+
+.box-form{
+    display: none;
+    border: 1px solid;
+    width: 100%;
+    height: auto;
+}
+
+.box-contacto{
+    font-size: 38px;
+    display: flex;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Nunito Sans', sans-serif;
+}
