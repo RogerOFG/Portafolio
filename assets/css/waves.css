@@ -1,7 +1,7 @@
 .hero{
     position: relative;
     color: #fff;
-    background: linear-gradient(to bottom,#7a19f1,#332179);
+    background: linear-gradient(to bottom, var(--primary-color), #332179);
     background-attachment: fixed;
 }
 
