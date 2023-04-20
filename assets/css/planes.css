@@ -73,7 +73,12 @@ li a .bi-x{
 }
 
 .button-central{
-    transform: translateY(85px);
+    position: absolute;
+    top: 115px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .button-central img{
@@ -188,8 +193,6 @@ main{
 /*--- -- -------- -- ---*/
 
 .box-form{
-    /* display: none; */
-    /* border: 1px solid; */
     width: 100%;
     height: auto;
     padding-top: 30px;
@@ -223,9 +226,16 @@ main{
 /*--- -- FORMULARIO -- ---*/
 /*--- -- ---------- -- ---*/
 
+.content-input1{
+    display: flex; 
+    gap: 50px; 
+    max-width: 100%;
+}
+
 .inputBox{
     position: relative;
     width: 645px;
+    max-width: 100%;
 }
 
 .inputBox1 {
@@ -295,6 +305,7 @@ main{
 .enter {
     height: 45px;
     width: 300px;
+    max-width: 100%;
     border-radius: 15px;
     border: 2px solid var(--footer-color);
     color: var(--footer-color);
@@ -310,4 +321,59 @@ main{
 .enter:hover {
     background-color: var(--footer-color);
     color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .inputBox textarea:valid~span,
+    .inputBox textarea:focus~span{
+        transform: translateX(260px) translateY(-15px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content-input1{
+        flex-direction: column;
+    }
+
+    .inputBox1{
+        width: 500px;
+        max-width: 100%;
+    }
+
+    .box-planes{
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .box-plan{
+        max-width: 100%;
+    }
+
+    .box-contacto{
+        font-size: 30px;
+    }
+
+    .inputBox textarea:valid~span,
+    .inputBox textarea:focus~span{
+        transform: translateX(160px) translateY(-15px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header{
+        padding: 30px 0;
+    }
+
+    .menu{
+        width: 20%;
+    }
+
+    li{
+        margin: 20px 0px 5px 0px;
+    }
+
+    .inputBox textarea:valid~span,
+    .inputBox textarea:focus~span{
+        transform: translateX(50px) translateY(-15px);
+    }
 }
