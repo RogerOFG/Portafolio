@@ -57,9 +57,13 @@ li,
     margin: 20px 20px 5px 20px;
 }
 
-a,
-.title-menu{
+a{
     color: #fff;
+}
+
+.menu ul li a,
+.title-menu{
+    color: var(--primary-color);
     font-size: 17px;
     font-weight: 600;
 }
