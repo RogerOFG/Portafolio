@@ -188,10 +188,18 @@ main{
 /*--- -- -------- -- ---*/
 
 .box-form{
-    display: none;
-    border: 1px solid;
+    /* display: none; */
+    /* border: 1px solid; */
     width: 100%;
     height: auto;
+    padding-top: 30px;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
 .box-contacto{
@@ -199,5 +207,107 @@ main{
     display: flex;
     text-align: center;
     font-weight: 900;
+    color: var(--primary-color);
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    padding-bottom: 40px;
+}
+
+.input-box{
+    width: 200px;
+    height: 50px;
+    border: 1px solid #ffcd00;
+}
+
+/*--- -- ---------- -- ---*/
+/*--- -- FORMULARIO -- ---*/
+/*--- -- ---------- -- ---*/
+
+.inputBox{
+    position: relative;
+    width: 645px;
+}
+
+.inputBox1 {
+    position: relative;
+    width: 300px;
+}
+
+.inputBox1 input,
+.inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: var(--footer-color);
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid var(--footer-color);
+    border-bottom: 2px solid var(--footer-color);
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: var(--footer-color);
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span,
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+    transform: translateX(180px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: var(--footer-color);
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span{
+    transform: translateX(360px) translateY(-15px);
+}
+
+.inputBox textarea:valid,
+.inputBox textarea:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+    border: 2px solid var(--footer-color);
+    border-radius: 8px;
+}
+
+.enter {
+    height: 45px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid var(--footer-color);
+    color: var(--footer-color);
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 5em;
+}
+
+.enter:hover {
+    background-color: var(--footer-color);
+    color: white;
 }
