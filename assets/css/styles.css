@@ -61,7 +61,7 @@ a{
     color: #fff;
 }
 
-.menu ul li a,
+.menu ul li,
 .title-menu{
     color: var(--primary-color);
     font-size: 17px;
@@ -435,7 +435,6 @@ footer{
 
 @media screen and (max-width: 1111px) {
     .footer-planes{
-
         gap: 0px;
     }
 }
@@ -490,6 +489,10 @@ footer{
     /*--- -- --------------- -- ---*/
     /*--- -- MENU RESPONSIVE -- ---*/
     /*--- -- --------------- -- ---*/
+
+    .header a{
+        color: var(--primary-color);
+    }
 
     .header{
         height: 80px;
