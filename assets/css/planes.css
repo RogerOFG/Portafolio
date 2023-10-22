@@ -243,6 +243,12 @@ main{
     width: 300px;
 }
 
+/* .inputBox textarea{
+    resize: none;
+    min-height: 100px;
+    form-sizing: content;  // FORM SIZING: NUEVA FUNCIONALIDAD PARA LOS TEXT AREA (AUN NO HA SALIDO)
+} */
+
 .inputBox1 input,
 .inputBox textarea {
     width: 100%;
